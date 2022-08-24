@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2%;
+}
+
+footer{
+    margin: 5%;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    align-self: flex-start;
+    width: 50px;
+}
+.img1{
+    width: 20%;
+}

@@ -1,0 +1,17 @@
+.cabeceraContenedor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.img1{
+display: flex;
+flex-direction: row;
+align-self: flex-start;
+}
