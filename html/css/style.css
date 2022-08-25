@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+.cabeceraContenedor{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.img1{
+display: flex;
+flex-direction: row;
+align-self: flex-start;
+}
+=======
 body {
     background-image: url(https://lh5.googleusercontent.com/p/AF1QipN2STajE4m8zmjwCAgQl0p6AucNBo9gfFE2qQDC=w650-h486-k-no);
     width: 100%;
@@ -25,3 +44,4 @@ body {
     flex-direction: row;
     justify-content: space-around
 }
+>>>>>>> 299f5c52d90e2a5bad79cf42011a84b0e9a93308
