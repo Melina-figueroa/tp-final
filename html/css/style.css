@@ -1,19 +1,27 @@
-header{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 2%;
+body {
+    background-image: url(https://lh5.googleusercontent.com/p/AF1QipN2STajE4m8zmjwCAgQl0p6AucNBo9gfFE2qQDC=w650-h486-k-no);
+    width: 100%;
 }
 
-footer{
-    margin: 5%;
+.contenedor {
+    display: flex;
+    flex-direction: row;
     text-align: center;
 }
-.logo{
-    display: flex;
-    align-self: flex-start;
-    width: 50px;
+
+.textoEncima {
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    color: palegoldenrod;
 }
-.img1{
-    width: 20%;
+
+.centrado {
+    align-self: center;
+}
+
+.navSup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
 }
