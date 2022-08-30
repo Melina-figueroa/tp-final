@@ -55,7 +55,7 @@ function comprar(){
   
   //boton para enviar datos de formulario//
 
-  /*let botonEnviar = document.getElementById("botonContacto");
+  let botonEnviar = document.getElementById("botonContacto");
 botonEnviar.addEventListener("click", enviarDatos);
 
 //funcion que envia un alert una vez cargados los datos//
@@ -63,7 +63,7 @@ botonEnviar.addEventListener("click", enviarDatos);
 function enviarDatos(){
 alert("Gracias por enviar su consulta");
 }
-*/
+
 
 
 
