@@ -8,13 +8,13 @@ let total = [];
 
 //boton comprar, una vez inicializado entra a la funcion agregarProductos//
 const botonComprar = document.getElementById("botonComprar");
-const containerProductos = document.getElementById("contenedorProductos");
+const crearProductos = document.getElementById("contenedorProductos");
 
 //funcion donde se cargan los productos y su respetivo precio y cantidad//
 function agregarProducto() {
     for (let i = 0; i < stock.length; i ++){
-        let divProducto = document.createElement("div");
-        divProducto.id = productos[i];
+        let nuevoItem = document.createElement("div");
+        nuevoItem.id = productos[i];
         let nombreProducto = document.createElement("p");
         nombreProducto.innerHTML = productos[i];
         let precioProducto = document.createElement("p");
@@ -25,10 +25,10 @@ function agregarProducto() {
            cantidad.type = "number";
            cantidad.max = String(stock[i]);
            cantidad.min = "0";
-           divProducto.appendChild(nombreProducto);
-           divProducto.appendChild(precioProducto)
-           divProducto.appendChild(cantidad);
-           containerProductos.appendChild(divProducto);
+           nuevoItem.appendChild(nombreProducto);
+           nuevoItem.appendChild(precioProducto)
+           nuevoItem.appendChild(cantidad);
+           crearProductos.appendChild(nuevoItem);
    
         } 
 
@@ -54,13 +54,16 @@ function comprar(){
   };
   
   //boton para enviar datos de formulario//
-  let botonEnviar = document.getElementById("botonContacto");
+
+  /*let botonEnviar = document.getElementById("botonContacto");
 botonEnviar.addEventListener("click", enviarDatos);
 
 //funcion que envia un alert una vez cargados los datos//
+
 function enviarDatos(){
 alert("Gracias por enviar su consulta");
 }
+*/
 
 
 

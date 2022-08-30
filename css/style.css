@@ -1,0 +1,84 @@
+body{
+    width: 660px;
+    background-image: url(https://scontent.frga1-1.fna.fbcdn.net/v/t39.30808-6/248367303_113457847797359_3949224790653497856_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHNo6z1djVKRbhuw4iQJ3urpEMl-VkZcwGkQyX5WRlzAa31P9RUjhTw854tHv3mW80&_nc_ohc=kL3i00osZw8AX9GyOK2&_nc_ht=scontent.frga1-1.fna&oh=00_AT_UnrTVLBWUDBXRP-0qjz-3rF3lLFXcGOoUq31f4_c_Bg&oe=631130AC);
+   
+}
+.olNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+.liNav{
+    font-size: larger;
+    list-style: none;
+    border: 3px rgb(60, 158, 4) solid;
+    background-color: rgb(138, 230, 129);
+    border-radius: 5px;
+    width: fit-content;
+    margin-left: 25%;
+}
+.descripcionBienvenida{
+    display: flex;
+    font-style: italic;
+    color: purple;
+}
+
+
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+
+}
+.inputConsulta{
+    border: 2px green solid;
+    font-weight: bold;
+    font-style: italic;
+}
+.textareaConsulta{
+    border: 2px green solid;
+
+}
+.subTituloConsulta{
+    color: purple;
+    font-size: large;
+    font-weight: bold;
+}
+button{
+    align-self: center;
+    width: fit-content;
+    color: rgb(130, 14, 238);
+    font-weight: bolder;
+}
+
+footer{
+    display: flex;
+    margin: 20%;
+    font-size: large;
+    width: max-content;
+    font-weight: bolder;
+    color: rgb(175, 6, 63);
+    border: 3px rgb(230, 70, 70) solid;
+    background-color: cadetblue;
+}
+.inputCompra{
+    display: flex;
+    flex-direction: column;
+
+}
+.contenedorComprar{
+    display: flex;
+    flex-direction: column;
+}
+#contenedorProductos{
+    color: rgb(68, 3, 68);
+    font-weight: bolder;
+}
+#contenedorContacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    color: rgb(10, 43, 1);
+    font-weight: bolder;
+    border: 2px goldenrod solid;
+}
