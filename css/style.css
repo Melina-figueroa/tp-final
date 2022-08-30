@@ -1,4 +1,4 @@
-body{
+    body{
     width: 660px;
     background-image: url(https://scontent.frga1-1.fna.fbcdn.net/v/t39.30808-6/248367303_113457847797359_3949224790653497856_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHNo6z1djVKRbhuw4iQJ3urpEMl-VkZcwGkQyX5WRlzAa31P9RUjhTw854tHv3mW80&_nc_ohc=kL3i00osZw8AX9GyOK2&_nc_ht=scontent.frga1-1.fna&oh=00_AT_UnrTVLBWUDBXRP-0qjz-3rF3lLFXcGOoUq31f4_c_Bg&oe=631130AC);
    
@@ -28,15 +28,20 @@ body{
 .formularioContacto{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 }
 .inputConsulta{
     border: 2px green solid;
     font-weight: bold;
     font-style: italic;
+    width: fit-content;
+
 }
 .textareaConsulta{
     border: 2px green solid;
+    width: fit-content;
+
 
 }
 .subTituloConsulta{
@@ -81,4 +86,22 @@ footer{
     color: rgb(10, 43, 1);
     font-weight: bolder;
     border: 2px goldenrod solid;
+    
 }
+
+@media screen and (max-width: 660px){
+    .olNav{
+        flex-direction: column;
+    }
+    .liNav{
+    align-self: flex-end;
+    }
+    footer{
+        display: none;
+    }
+    #contenedorContacto{
+        flex-direction: column;
+    }
+}
+
+   
