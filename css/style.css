@@ -55,7 +55,7 @@ footer{
     display: flex;
     margin: 20%;
     font-size: large;
-    width: max-content;
+    width: 100%;
     font-weight: bolder;
     color: rgb(175, 6, 63);
     border: 3px rgb(230, 70, 70) solid;
