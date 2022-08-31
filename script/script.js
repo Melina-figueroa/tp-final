@@ -31,7 +31,7 @@ function agregarProducto() {
     cantidad.max = String(stock[i]);
     cantidad.min = "0";
     nuevoItem.appendChild(nombreProducto);
-    nuevoItem.appendChild(precioProducto)
+    nuevoItem.appendChild(precioProducto);
     nuevoItem.appendChild(cantidad);
     crearProductos.appendChild(nuevoItem);
 
