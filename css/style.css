@@ -4,27 +4,43 @@
 
     }
 
-    .olNav {
+    .navPrincipal{
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
-        margin: 20px;
+        flex-direction: column;
+        margin: 5%;
     }
+ .olNav{
+    display: flex;
+    flex-direction: row;
 
+}
     .liNav {
-        font-size: larger;
+        display: flex;
         list-style: none;
-        border: 3px rgb(60, 158, 4) solid;
+        border: 3px orange solid;
         background-color: rgb(138, 230, 129);
         border-radius: 5px;
-        width: fit-content;
-        margin-left: 25%;
+        font-size: x-large;
+        margin: 5%;
     }
-
+.tituloHome{
+    color: beige;
+    font-style: oblique;
+    border-style: groove;
+    margin-top: 15%;
+    width: fit-content;    
+}
+.centrar{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
     .descripcionBienvenida {
         display: flex;
-        font-style: italic;
+        font-style: oblique;
         color: purple;
+        margin-top: 30%;
     }
 
 
@@ -99,7 +115,16 @@
         border: 2px goldenrod solid;
 
     }
-
+.galeria, a{
+    display: flex;
+    justify-content: flex-end;
+    font-size: x-large;
+    color: rgb(43, 123, 134);
+    font-weight: bolder;
+}
+.imagenGaleria{
+    border: 3px black solid;
+}
     @media screen and (max-width: 660px) {
         .olNav {
             flex-direction: column;
