@@ -7,22 +7,24 @@
     .navPrincipal{
         display: flex;
         justify-content: space-around;
+        align-items: center;
         flex-direction: column;
         margin: 5%;
     }
  .olNav{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-around;
+    width: 100%;
 }
     .liNav {
         display: flex;
+        align-self: center;
         list-style: none;
         border: 3px orange solid;
         background-color: rgb(138, 230, 129);
         border-radius: 5px;
         font-size: x-large;
-        margin: 5%;
     }
 .tituloHome{
     color: beige;

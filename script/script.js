@@ -5,7 +5,7 @@ let productos = ["leche", "yerba", "pañales", "azucar", "galletitas", "gaseosa"
 let precio = [150, 760, 3000, 100, 140, 350];
 let stock = [10, 8, 5, 3, 11, 6];
 let total = 0;
-
+let cantidadSeleccionada = []
 
 
 
@@ -28,7 +28,7 @@ function agregarProducto() {
     cantidad.innerHTML = stock[i];
     cantidad.id = stock[i];
     cantidad.type = "number";
-    cantidad.max = String(stock[i]);
+    cantidad.max = (stock[i]);
     cantidad.min = "0";
     nuevoItem.appendChild(nombreProducto);
     nuevoItem.appendChild(precioProducto);
@@ -36,7 +36,6 @@ function agregarProducto() {
     crearProductos.appendChild(nuevoItem);
 
   }
-
 }
 
 //funcion para calcular la comprar//
@@ -46,41 +45,49 @@ function comprar() {
     let cantidad = document.getElementById(stock[i]);
     let cantidadSeleccionada = Number(cantidad.value);
 
-    if (cantidadSeleccionada > 0) {
-      let subTotal = precio[i] * cantidadSeleccionada;
-      console.log(
-        "Compraste ", (cantidadSeleccionada), "unidades de ", (productos[i]), "precio $", (precio[i]), "SubTotal $ ", (subTotal));
-    }
-    total += precio[i] * cantidadSeleccionada;
-  }
+   if (cantidadSeleccionada > stock[i]) {
+    console.log("stock faltante de", productos[i]);
+   
+      } else if (cantidadSeleccionada > 0) {
+        let subTotal = precio[i] * cantidadSeleccionada;
+        console.log(
+          "Compraste ", (cantidadSeleccionada), "unidades de ", (productos[i]), "precio $", (precio[i]), "SubTotal $ ", (subTotal));
+   }
+   
+     total += precio[i] * cantidadSeleccionada;
+}
+  
   if (total > 0) {
-    console.log("Total de la compra ", (total));
-  } else if (total < 0) {
 
-    console.log("Seleccione al menos un producto");
-  }
+ console.log("Total de la compra ", (total));
+  
+ } else if (total < 0) {
 
+   console.log("Seleccione al menos un producto");
+ 
+
+ }
 
 };
 
 
 
-//boton para enviar datos de formulario//
-
-/* let botonEnviar = document.getElementById("botonContacto");
-   botonEnviar.addEventListener("click", enviarDatos);
+// //boton para enviar datos de formulario//
+/*
+let botonEnviar = document.getElementById("botonContacto");
+  botonEnviar.addEventListener("load", enviarDatos);
 
 //funcion que envia un alert una vez cargados los datos//
 
- function enviarDatos(){
-   alert("Gracias por enviar su consulta");
-}
+  function enviarDatos(){
+    alert("Gracias por enviar su consulta");
+ }
+
 */
 
 
-
 //eventos que una vez que se cargue la pagina se mostraran los productos y ejecutaran las funciones//
-// window.addEventListener("load", agregarProducto);
+//window.addEventListener("load", agregarProducto);
 window.onload = agregarProducto();
 botonComprar.addEventListener("click", comprar);
 
