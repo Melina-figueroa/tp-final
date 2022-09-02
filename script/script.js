@@ -11,11 +11,21 @@ let cantidadSeleccionada = []
 
 //boton comprar, una vez inicializado entra a la funcion agregarProductos//
 const botonComprar = document.getElementById("botonComprar");
-const crearProductos = document.getElementById("contenedorProductos");
 
+/*const botonEnviar = document.getElementById("botonContacto");
+botonEnviar.addEventListener("click", enviarDatos);
+
+
+
+function enviarDatos(){
+
+  alert("Gracias por enviar su consulta");
+ }
+*/
 
 //funcion donde se cargan los productos y su respetivo precio y cantidad//
 function agregarProducto() {
+  const crearProductos = document.getElementById("contenedorProductos");
 
   for (let i = 0; i < stock.length; i++) {
     let nuevoItem = document.createElement("div");
@@ -45,49 +55,37 @@ function comprar() {
     let cantidad = document.getElementById(stock[i]);
     let cantidadSeleccionada = Number(cantidad.value);
 
-   if (cantidadSeleccionada > stock[i]) {
-    console.log("stock faltante de", productos[i]);
-   
-      } else if (cantidadSeleccionada > 0) {
-        let subTotal = precio[i] * cantidadSeleccionada;
-        console.log(
-          "Compraste ", (cantidadSeleccionada), "unidades de ", (productos[i]), "precio $", (precio[i]), "SubTotal $ ", (subTotal));
-   }
-   
-     total += precio[i] * cantidadSeleccionada;
-}
-  
-  if (total > 0) {
+    if (cantidadSeleccionada > stock[i]) {
+      console.log("stock faltante de", productos[i], "introduzca una cantidad menor a ", stock[i]);
 
- console.log("Total de la compra ", (total));
-  
- } else if (total < 0) {
+    } else if (cantidadSeleccionada > 0) {
+      let subTotal = precio[i] * cantidadSeleccionada;
+      console.log(
+        "Compraste ", (cantidadSeleccionada), "unidades de ", (productos[i]), "precio $", (precio[i]), "SubTotal $ ", (subTotal));
+      total += precio[i] * cantidadSeleccionada;
+    } else if (total > 0) {
+      console.log("Total de la compra ", (total));
 
-   console.log("Seleccione al menos un producto");
+
+    } else if (total < 0) {
+
+      console.log("Seleccione al menos un producto");
+    }
+  }
+};
+window.onload = agregarProducto();
+botonComprar.addEventListener("click", comprar);
+
+
+/*boton para enviar datos de formulario
+*/
+
+ 
+//funcion que envia un alert una vez cargados los datos//
  
 
- }
-
-};
-
-
-
-// //boton para enviar datos de formulario//
-/*
-let botonEnviar = document.getElementById("botonContacto");
-  botonEnviar.addEventListener("load", enviarDatos);
-
-//funcion que envia un alert una vez cargados los datos//
-
-  function enviarDatos(){
-    alert("Gracias por enviar su consulta");
- }
-
-*/
 
 
 //eventos que una vez que se cargue la pagina se mostraran los productos y ejecutaran las funciones//
 //window.addEventListener("load", agregarProducto);
-window.onload = agregarProducto();
-botonComprar.addEventListener("click", comprar);
 
