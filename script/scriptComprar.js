@@ -59,7 +59,7 @@ function comprar() {
 
 
 
-    } else if (total < 0) {
+    } else if (total <= 0) {
 
       console.log("Seleccione al menos un producto");
     }
