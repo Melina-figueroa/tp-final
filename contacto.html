@@ -11,38 +11,47 @@
 
 <body>
     <header>
-        <nav class="navPrincipal">
-            <ol class="olNav">
-                <li class="liNav"><a href="home.html">Home</a></li>
-                <li class="liNav"><a href="compras.html">Comprar</a></li>
-                <li class="liNav"><a href="contacto.html">Contacto</a></li>
-            </ol>
+        <nav class="principal">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="compras.html">Comprar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html">Galería de fotos</a></li>
+            </ul>
         </nav>
-        <h1>Multirubro Nara</h1>
     </header>
+
+    <section class="titulo">
+        <h1>Multirubro Nara</h1>
+    </section>
 
     <section>
 
         <div id="contenedorContacto">
             <h2>Datos de contacto</h2>
             <ul>
-                <li>Dirección: Tolhuin 1262 9420 Río Grande, Provincia de Tierra
-                    del Fuego, Antártida e Islas del Atlántico Sur, Argentina <a
+                <div>
+                    <li>Dirección: Tolhuin 1262 9420 Río Grande, Provincia de Tierra
+                        del Fuego, Antártida e Islas del Atlántico Sur, Argentina </li>
+                    <a class="liHorarios"
                         href="https://www.google.com/maps/place/Kiosco+Nara/@-53.8084115,-67.655595,17z/data=!3m1!4b1!4m5!3m4!1s0xbc4b16e119f76587:0x795527cc7de24650!8m2!3d-53.8084115!4d-67.6534063">Como
-                        llegar</a></li>
-                <li>Telefono: 02964 58-8187 <a href="02964 58-8187">Contactenos</a></li>
-                <h3>Horarios de atención:</h3>
+                        llegar</a>
+                </div>
+                <li>Telefono: 02964 58-8187 <a class="liHorarios" href="02964 58-8187">Contactenos</a></li>
 
-                <li>Lunes 10:00–23:00</li>
-                <li>Martes 10:00–23:00</li>
-                <li>Miércoles 10:00–23:00</li>
-                <li>Jueves 10:00–23:00</li>
-                <li>Viernes 10:00–23:00</li>
-                <li>Sábado 10:00–23:00</li>
-                <li>Domingo 10:00–23:00</li>
+                <div class="liHorarios">
+                    <h3>Horarios de atención:</h3>
 
+                    <li>Lunes 10:00–23:00</li>
+                    <li>Martes 10:00–23:00</li>
+                    <li>Miércoles 10:00–23:00</li>
+                    <li>Jueves 10:00–23:00</li>
+                    <li>Viernes 10:00–23:00</li>
+                    <li>Sábado 10:00–23:00</li>
+                    <li>Domingo 10:00–23:00</li>
+                </div>
                 <h3>Siganos en nuestras redes</h3>
-                <a href="https://www.facebook.com/profile.php?id=100073994337661">
+                <a class="liHorarios" href="https://www.facebook.com/profile.php?id=100073994337661">
                     Facebook
                 </a>
             </ul>
@@ -57,7 +66,7 @@
             <textarea class="textareaConsulta" name="" id="" cols="30" rows="10">
 
             </textarea>
-            <button id="botonContacto" class="textareaConsulta" type=" sumit" >Enviar consulta</button>
+            <button id="botonContacto" class="textareaConsulta" type=" submit">Enviar consulta</button>
         </form>
     </section>
 
@@ -76,7 +85,7 @@
             </div>
     </footer>
 
-    <script src="script/script.js"></script>
+    <script src="script/scriptContacto.js"></script>
 </body>
 
 </html>

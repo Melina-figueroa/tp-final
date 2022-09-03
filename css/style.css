@@ -1,142 +1,206 @@
-    body {
-        width: 660px;
-        background-image: url(https://scontent.frga1-1.fna.fbcdn.net/v/t39.30808-6/248367303_113457847797359_3949224790653497856_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHNo6z1djVKRbhuw4iQJ3urpEMl-VkZcwGkQyX5WRlzAa31P9RUjhTw854tHv3mW80&_nc_ohc=kL3i00osZw8AX9GyOK2&_nc_ht=scontent.frga1-1.fna&oh=00_AT_UnrTVLBWUDBXRP-0qjz-3rF3lLFXcGOoUq31f4_c_Bg&oe=631130AC);
+body {
+    width: 100%;
+    background-image: linear-gradient(rgba(45, 42, 42, 0.45),
+            rgba(30, 28, 28, 0.45)), url(https://scontent.frga1-1.fna.fbcdn.net/v/t39.30808-6/248367303_113457847797359_3949224790653497856_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHNo6z1djVKRbhuw4iQJ3urpEMl-VkZcwGkQyX5WRlzAa31P9RUjhTw854tHv3mW80&_nc_ohc=kL3i00osZw8AX9GyOK2&_nc_ht=scontent.frga1-1.fna&oh=00_AT_UnrTVLBWUDBXRP-0qjz-3rF3lLFXcGOoUq31f4_c_Bg&oe=631130AC);
+    background-repeat: space;
+    background-size: cover;
+    height: auto;
+    color: orange;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-    }
+nav.principal ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-    .navPrincipal{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        margin: 5%;
-    }
- .olNav{
+}
+
+nav.principal ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: orange;
+}
+
+nav.principal ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo h1 {
+    font-size: xx-large;
+    font-style: oblique;
+    border-style: outset;
+    margin-top: 15%;
+}
+
+.descripcionBienvenida {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-}
-    .liNav {
-        display: flex;
-        align-self: center;
-        list-style: none;
-        border: 3px orange solid;
-        background-color: rgb(138, 230, 129);
-        border-radius: 5px;
-        font-size: x-large;
-    }
-.tituloHome{
-    color: beige;
+    text-align: center;
     font-style: oblique;
-    border-style: groove;
-    margin-top: 15%;
-    width: fit-content;    
+    margin: 5%;
+    width: auto;
 }
-.centrar{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+
+.descripcionBienvenida h2 {
+    font-size: xx-large;
+    margin-top: 250px;
+
 }
-    .descripcionBienvenida {
-        display: flex;
-        font-style: oblique;
-        color: purple;
-        margin-top: 30%;
-    }
 
-
-    .formularioContacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .inputConsulta {
-        border: 2px green solid;
-        font-weight: bold;
-        font-style: italic;
-        width: fit-content;
-
-    }
-
-    .textareaConsulta {
-        border: 2px green solid;
-        width: fit-content;
-
-
-    }
-
-    .subTituloConsulta {
-        color: purple;
-        font-size: large;
-        font-weight: bold;
-    }
-
-    button {
-        align-self: center;
-        width: fit-content;
-        color: rgb(130, 14, 238);
-        font-weight: bolder;
-    }
-
-    footer {
-        display: flex;
-        margin: 20%;
-        font-size: large;
-        width: 100%;
-        font-weight: bolder;
-        color: rgb(175, 6, 63);
-        border: 3px rgb(230, 70, 70) solid;
-        background-color: cadetblue;
-    }
-
-    .inputCompra {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .contenedorComprar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contenedorProductos {
-        color: rgb(68, 3, 68);
-        font-weight: bolder;
-    }
-
-    #contenedorContacto {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-        color: rgb(10, 43, 1);
-        font-weight: bolder;
-        border: 2px goldenrod solid;
-
-    }
-.galeria, a{
-    display: flex;
-    justify-content: flex-end;
+.descripcionBienvenida h3 {
     font-size: x-large;
-    color: rgb(43, 123, 134);
+    margin-top: 200px;
+
+}
+
+.descripcionBienvenida,
+h3,
+ul,
+li {
+    list-style: none;
+    justify-content: center;
+}
+
+/*clase para link home*/
+section.div.galeria,
+a {
+    color: orangered;
+    text-decoration: none;
+    margin-top: 10%;
     font-weight: bolder;
 }
-.imagenGaleria{
-    border: 3px black solid;
+
+/* clases para galeria*/
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
-    @media screen and (max-width: 660px) {
-        .olNav {
-            flex-direction: column;
-        }
 
-        .liNav {
-            align-self: flex-end;
-        }
+.imagenGaleria {
+    display: flex;
+    flex-direction: row;
 
-        footer {
-            display: none;
-        }
+}
+
+.imagenGaleria img {
+    width: 350px;
+    margin: 10px;
+    border: 5px orangered solid;
+
+}
+
+.contenedorComprar {
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedorProductos {
+    font-weight: bolder;
+}
+
+.inputCompra {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    font-weight: bolder;
+    border: 2px goldenrod solid;
+
+}
+
+#contenedorContacto,
+.aDdatocontacto {
+    color: black;
+    text-shadow: 0.1em 0.1em 0.2em white;
+
+}
+
+#contenedorContacto,
+.liHorarios {
+    color: orange;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.subTituloConsulta {
+    font-size: large;
+    font-weight: bold;
+}
+
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inputConsulta {
+    border: 2px green solid;
+    font-weight: bold;
+    font-style: italic;
+    width: fit-content;
+
+}
+
+.textareaConsulta {
+    border: 2px green solid;
+    width: fit-content;
+
+
+}
+
+
+button {
+    align-self: center;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+
+
+footer {
+    display: flex;
+    margin: 20%;
+    font-size: large;
+    width: max-content;
+    font-weight: bolder;
+    border: 3px rgb(230, 70, 70) solid;
+    background-color: cadetblue;
+}
+
+
+@media screen and (max-width: 660px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: left;
     }
+
+    nav.principal ul {
+        flex-direction: column;
+    }
+
+
+
+    footer {
+        display: none;
+    }
+}
